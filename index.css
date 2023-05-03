@@ -1,0 +1,790 @@
+.btn-main, .btn-main-s {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.25rem;
+  background-color: rgb(0, 82, 255);
+  color: white;
+  border: none;
+  border: solid 1px rgb(0, 82, 255);
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: rgb(10, 70, 228);
+  color: white;
+  border: solid 1px rgb(10, 70, 228);
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.25rem;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #0077ff;
+  border: none;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 0.85rem;
+  list-style: none;
+  display: inline;
+  font-weight: 600;
+}
+.main-menu li a {
+  color: black;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.icon-sm i {
+  color: #0077ff;
+  font-size: medium;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3333333333);
+  border-radius: 50%;
+  padding: 0.15rem 0.3rem;
+}
+
+.feature {
+  flex-direction: column;
+  display: flex;
+}
+.feature .icon {
+  color: #0077ff;
+  font-size: 10rem;
+  text-align: center;
+}
+.feature .description .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.feature .text {
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+.feature .cta {
+  color: #0077ff;
+  font-weight: 600;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.icon-desk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-desk .icon {
+  padding: 0;
+  color: #0077ff;
+  font-size: 10rem;
+}
+.icon-desk .title {
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn-main, .btn-main-s {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.25rem;
+  background-color: rgb(0, 82, 255);
+  color: white;
+  border: none;
+  border: solid 1px rgb(0, 82, 255);
+  font-size: 14px;
+  font-weight: 700;
+}
+.btn-main:hover, .btn-main-s:hover {
+  background-color: rgb(10, 70, 228);
+  color: white;
+  border: solid 1px rgb(10, 70, 228);
+}
+.btn-main-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.btn-sec, .btn-sec-s {
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.25rem;
+  color: black;
+  background-color: transparent;
+  border: none;
+}
+.btn-sec:hover, .btn-sec-s:hover {
+  color: #0077ff;
+  border: none;
+}
+.btn-sec-s {
+  font-size: 0.75rem;
+  padding: 0.1rem 1rem;
+}
+
+.main-menu {
+  margin-bottom: 0;
+}
+.main-menu li {
+  font-size: 0.85rem;
+  list-style: none;
+  display: inline;
+  font-weight: 600;
+}
+.main-menu li a {
+  color: black;
+  text-decoration: none;
+}
+.main-menu li a:hover {
+  text-decoration: underline;
+}
+
+.icon-sm i {
+  color: #0077ff;
+  font-size: medium;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3333333333);
+  border-radius: 50%;
+  padding: 0.15rem 0.3rem;
+}
+
+.feature {
+  flex-direction: column;
+  display: flex;
+}
+.feature .icon {
+  color: #0077ff;
+  font-size: 10rem;
+  text-align: center;
+}
+.feature .description .title {
+  font-size: 2rem;
+  text-align: center;
+}
+.feature .text {
+  color: #333;
+  font-weight: 600;
+  text-align: center;
+}
+.feature .cta {
+  color: #0077ff;
+  font-weight: 600;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.icon-desk {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.icon-desk .icon {
+  padding: 0;
+  color: #0077ff;
+  font-size: 10rem;
+}
+.icon-desk .title {
+  margin-top: -2rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+  align-items: center;
+  background-color: white;
+  z-index: 1000;
+}
+.nav ul li {
+  padding-right: 1.4rem;
+}
+
+.logo img {
+  width: 7rem;
+  height: 3.5rem;
+}
+
+.login {
+  font-weight: 600;
+  font-size: smaller;
+}
+
+.sec-home {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  padding-top: 12rem;
+  padding-left: 4rem;
+  padding-bottom: 7.5rem;
+}
+.sec-home .home-cta {
+  flex: 1;
+}
+.sec-home .home-cta .cta-text {
+  color: rgb(0, 82, 255);
+  font-weight: 600;
+}
+.sec-home .home-cta .cta-text .bitcoin {
+  background-color: rgb(0, 82, 255);
+  color: white;
+  border-radius: 50%;
+  padding: 0.15rem 0.3rem;
+}
+.sec-home .home-cta .cta-text a {
+  text-decoration: none;
+}
+.sec-home .home-cta .cta-text .arrow {
+  font-weight: 800;
+}
+.sec-home .home-cta .home-title {
+  font-size: 62px;
+  font-weight: 600;
+  line-height: 1.15;
+  color: black;
+}
+.sec-home .home-cta .home-text {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.4;
+  padding-top: 20px;
+  color: black;
+  word-spacing: -2px;
+}
+.sec-home .home-img img {
+  width: 100%;
+  height: 534px;
+  min-width: 400px;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+.sec-home .login {
+  display: flex;
+  flex-direction: row;
+}
+.sec-home .login .input {
+  z-index: 0;
+  flex: 1 1 0px;
+  margin: 0px;
+  padding: 20px;
+  border-radius: 3px;
+  background: none;
+  font-size: 18px;
+  font-weight: 400;
+  color: gray;
+  border: 1px solid #ddd;
+  padding-right: 1px;
+  width: 100%;
+}
+.sec-home .login .btn-main, .sec-home .login .btn-main-s {
+  position: relative;
+  width: 30%;
+  margin: 0px;
+  border-radius: 4px;
+  padding: 24px;
+  font-size: 16px;
+}
+
+.sec-information {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.sec-information .imagen {
+  padding-top: 2rem;
+}
+.sec-information .information {
+  color: white;
+  text-align: start;
+  width: 100%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+.sec-information .information .title {
+  font-size: 2.7rem;
+  font-weight: 500;
+  word-spacing: -3px;
+}
+.sec-information .information .subtitle {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+.sec-information .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 35px;
+  padding-right: 25px;
+  border-radius: 28px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 500;
+  background-color: rgb(71, 126, 246);
+}
+.sec-information .button .bi-arrow-right {
+  font-size: 2rem;
+}
+.sec-information .button:hover {
+  background-color: rgb(51, 113, 247);
+}
+
+.division {
+  padding-top: 3.8rem;
+}
+
+.graphic {
+  display: inline;
+}
+.graphic .header {
+  font-size: 0.9rem;
+}
+.graphic .header th {
+  font-weight: 400;
+  color: rgb(91, 97, 110);
+  text-align: start;
+}
+.graphic .bitcoin {
+  background-color: orange;
+  color: white;
+  border-radius: 50%;
+  padding: 0.15rem 0.3rem;
+}
+.graphic .etherueum {
+  width: 27px;
+  background-color: rgb(114, 114, 214);
+  border-radius: 50%;
+  padding: 0.15rem 0.15rem;
+}
+.graphic .cardano {
+  width: 30px;
+  border-radius: 50%;
+  padding: 0.15rem 0.15rem;
+}
+.graphic .solana {
+  width: 30px;
+}
+.graphic .body {
+  font-size: 1.1rem;
+}
+.graphic .body th {
+  color: rgb(91, 97, 110);
+  font-weight: 300;
+}
+.graphic .body td {
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 1.7rem;
+  justify-content: center;
+  align-items: center;
+}
+.graphic .body span {
+  color: rgb(91, 97, 110);
+  padding-left: 10px;
+}
+.graphic .body .cambio {
+  color: green;
+}
+.graphic .body .negative {
+  color: red;
+}
+.graphic .body .btn {
+  font-size: 14px;
+  padding: 0.4rem 1.35rem;
+  font-weight: 600;
+}
+
+.dates {
+  display: flex;
+  align-items: center;
+}
+.dates .left {
+  padding-left: 2rem;
+  width: 40%;
+}
+.dates h5 {
+  font-size: 2.1rem;
+  font-weight: 600;
+  line-height: 35px;
+  color: black;
+  padding-bottom: 10px;
+}
+.dates p {
+  font-size: 0.9rem;
+}
+.dates button {
+  background-color: rgb(0, 82, 255);
+  color: white;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.6rem 0.8rem;
+}
+.dates button:hover {
+  background-color: rgb(0, 75, 235);
+  color: white;
+}
+.dates .icon {
+  width: 9.5%;
+  padding-right: 1rem;
+}
+.dates .right {
+  padding-left: 5rem;
+  padding-top: 2rem;
+  width: 60%;
+}
+.dates .right li {
+  padding-bottom: 2.5rem;
+  list-style: none;
+}
+.dates .right li a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.32rem;
+  font-weight: 500;
+}
+.dates .right li a:hover {
+  border: 1px solid #eee;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 24px;
+}
+.dates .right li .letters {
+  color: rgb(91, 97, 110);
+  font-size: 1rem;
+}
+.dates .right li .button {
+  width: 100%;
+  margin-left: 25%;
+  font-size: 1rem;
+  color: green;
+  font-weight: 600;
+}
+.dates .right li .number1 {
+  padding-left: 65px;
+}
+.dates .right li .number2 {
+  padding-left: 105px;
+}
+.dates .right li .number3 {
+  padding-left: 20px;
+}
+.dates .right .ver {
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(0, 82, 255);
+}
+.dates .right .ver:hover {
+  color: rgb(0, 60, 255);
+}
+
+.sec-features .inicio {
+  padding-top: 4rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-bottom: 7rem;
+}
+.sec-features .subtitle {
+  font-size: 40px;
+  padding-bottom: 1.1rem;
+  font-weight: 600;
+  color: black;
+}
+.sec-features .para {
+  color: rgb(94, 92, 92);
+  font-weight: 400;
+}
+.sec-features .img-2 {
+  width: 60%;
+  height: 60%;
+}
+.sec-features .items ul {
+  list-style: none;
+}
+.sec-features .items i {
+  color: #0077ff;
+  font-size: 1.75rem;
+  box-shadow: 0 8px 16px rgba(218, 225, 233, 0.557);
+  border-radius: 50%;
+  padding: 0.5rem 1rem;
+}
+.sec-features .items h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  display: inline-flex;
+  padding-left: 20px;
+  color: black;
+}
+.sec-features .items p {
+  padding-left: 80px;
+  color: gray;
+  font-weight: 400;
+}
+.sec-features .items p a {
+  text-decoration: none;
+}
+
+.sec-benefits {
+  border-top: 1px solid rgb(238, 240, 243);
+}
+.sec-benefits .inicio {
+  text-align: center;
+}
+.sec-benefits .iconos i {
+  display: flex;
+  justify-content: center;
+  color: #0077ff;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.sec-benefits .subtitle {
+  font-size: 35px;
+  padding-top: 6.5rem;
+  font-weight: 600;
+  line-height: 35px;
+}
+.sec-benefits .para {
+  font-size: 19.2px;
+}
+
+.cards {
+  flex-direction: row;
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 4rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  width: 100%;
+}
+.cards .icon {
+  padding-left: 8rem;
+  color: #0077ff;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.cards .description .title {
+  font-size: 1.38rem;
+  text-align: center;
+  font-weight: 600;
+  color: black;
+}
+.cards .description .text {
+  color: #333;
+  font-weight: 400;
+  text-align: center;
+  color: rgb(94, 92, 92);
+}
+.cards .cta {
+  color: #0077ff;
+  font-weight: 600;
+  margin-top: 3rem;
+  text-align: center;
+  padding-bottom: 10rem;
+}
+.cards a {
+  text-decoration: none;
+}
+
+.kpis {
+  background-color: rgb(0, 82, 255);
+  color: white;
+  padding: 3rem;
+  width: 100%;
+}
+.kpis .kpi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.kpis .number {
+  font-size: 53px;
+  letter-spacing: -2px;
+  font-weight: 700;
+  line-height: 80px;
+}
+.kpis .desc {
+  opacity: 0.7;
+}
+
+.sec-onboarding {
+  padding-top: 5rem;
+}
+.sec-onboarding .cards {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 8rem;
+  padding-right: 8rem;
+}
+.sec-onboarding i {
+  display: flex;
+  justify-content: center;
+  color: #0077ff;
+  font-size: 3.5rem;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.sec-onboarding .inicio {
+  text-align: center;
+}
+.sec-onboarding .subtitle {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 30px;
+}
+.sec-onboarding .line {
+  flex: 1 1 0%;
+  height: 1px;
+  background-color: rgb(91, 97, 110);
+  margin-top: 40px;
+}
+
+.sec-footer {
+  display: flex;
+  background-color: #F5F8FF;
+  justify-content: center;
+  align-items: center;
+}
+.sec-footer .left {
+  width: 40%;
+  padding-left: 6rem;
+}
+.sec-footer .left h5 {
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 600;
+}
+.sec-footer .left p {
+  font-size: 0.9rem;
+  opacity: 0.8;
+}
+.sec-footer .left button {
+  background-color: rgb(0, 82, 255);
+  color: white;
+  font-size: 0.92rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+}
+.sec-footer .left button:hover {
+  background-color: rgb(0, 75, 235);
+}
+.sec-footer img {
+  width: 60%;
+  height: 10%;
+}
+
+.text {
+  font-size: 0.89rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  opacity: 0.7;
+}
+.text a {
+  color: rgb(0, 60, 255);
+}
+
+.footer {
+  display: flex;
+  padding-top: 5rem;
+}
+.footer .part {
+  width: 23%;
+  display: flex;
+  flex-direction: column;
+  padding-left: 2rem;
+}
+.footer .part .icon img {
+  width: 60%;
+}
+.footer .part .languages {
+  padding-top: 1rem;
+}
+.footer .part .languages .select {
+  text-align: left;
+  padding: 0.3rem 1.1rem;
+  color: black;
+  border-radius: 7px;
+  border-color: rgba(221, 221, 221, 0.8235294118);
+  font-size: 1.05rem;
+}
+.footer .part .languages .select:hover {
+  border: 1px solid rgb(0, 65, 255);
+}
+.footer .part .languages .select option {
+  font-size: 1.2rem;
+}
+.footer .part p {
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+.footer .part .redes .media-social {
+  display: flex;
+  flex-direction: row;
+}
+.footer .part .redes .media-social a {
+  color: black;
+  text-decoration: none;
+  opacity: 0.7;
+  font-size: 1.1rem;
+  padding-right: 1rem;
+}
+.footer .part .redes .media-social a:hover {
+  color: rgb(0, 82, 255);
+  text-decoration: underline;
+}
+.footer .information {
+  width: 77%;
+  padding-top: 1rem;
+  padding-left: 8rem;
+  padding-right: 2rem;
+}
+.footer .information h6 {
+  font-size: 1.03rem;
+  color: black;
+  text-align: left;
+  padding-top: 25px;
+}
+.footer .information ul {
+  font-size: 1.03rem;
+  list-style: none;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  opacity: 0.6;
+  font-weight: 400;
+}
+.footer .information ul li {
+  padding: 1px 0;
+}
+.footer .information ul a {
+  color: black;
+  text-decoration: none;
+}

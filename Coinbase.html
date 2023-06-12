@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coinbase: comprar y vender Bitcoin</title>
-    <link rel="stylesheet" href="../Sass/index.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="png" href="/Imágenes/coinbase-logo.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 </head>
 <body>
+    <header>
         <nav class="nav">
             <a href="Coinbase.html">
-                <div class="logo"><img src="https://www.investopedia.com/thmb/fAXRqYgdvJAhO9v0Dchompe7KRM=/fit-in/1500x750/filters:format(png):fill(transparent):max_bytes(150000):strip_icc()/Coinbase_Wordmark-719a982e55e945fc93a3b1770b6a9aa9.jpg"alt="Logo"></div>
+                <div class="logo">
+                    <img src="https://www.investopedia.com/thmb/fAXRqYgdvJAhO9v0Dchompe7KRM=/fit-in/1500x750/filters:format(png):fill(transparent):max_bytes(150000):strip_icc()/Coinbase_Wordmark-719a982e55e945fc93a3b1770b6a9aa9.jpg" alt= "Logo">
+                </div>
             </a>
             <div class="menu">
                 <ul class="main-menu">
@@ -31,43 +34,37 @@
                 <button class="btn-main">Empezar</button>
             </div>
         </nav>
-        <section class="sec-home">
+    </header>
+    <main>
+        <div class="sec-home">
             <div class="home-cta">
                 <div class="cta-text">
-                  <a href="#">
-                    <i class="bitcoin bi bi-currency-bitcoin"></i>
-                    <span class="span"> Empiece a crear su portafolio </span>
-                    <i class="arrow bi bi-arrow-right"></i>
-                   </a>
+                    <a href="#">
+                        <i class="bitcoin bi bi-currency-bitcoin"></i>
+                        <span class="span"> Empiece a crear su portafolio </span>
+                        <i class="arrow bi bi-arrow-right"></i>
+                    </a>
                 </div>
-                
-                <span class="home-title">Empiece a <br> crear su <br>portafolio de criptomonedas</span>
+                <span class="home-title">Empiece a crear su portafolio de criptomonedas</span>
                 <p class="home-text">Coinbase es el lugar más sencillo para comprar y vender criptomonedas. Regístrate y comienz hoy  mismo.</p>
-                
                 <div class="login">
-                  <input class="input" type="email" placeholder="Dirección de correo electrónico">
-                  <button class="btn-main">Empezar</button>
+                    <input class="input" type="email" placeholder="Dirección de correo electrónico">
+                    <button class="btn-main">Empezar</button>
                 </div>
             </div>
-
             <div class="home-img">
                 <img src="https://images.ctfassets.net/c5bd0wqjc7v0/1DrLQBxqDE4XmGXcmaGy7u/8acbd0322803e3190154169b028e9d20/freeMoney-1.5.webp" alt="Imágen-home">
             </div>
-        </section>
-        <section class="sec-information">
+        </div>
+        <div class="sec-information">
             <img class="imagen" src="https://images.ctfassets.net/c5bd0wqjc7v0/2nmdMe3zBL8fgv3Ltvk6JD/068793dfeb8744955ed8794b97e0f9c5/image_26.png?fm=webp&q=100&w=1180"></img>
             <div class="information">
-              <h4 class="title">
-                Explora perfiles Web3 y solicita uno gratis
-              </h4>
-              <p class="subtitle">
-                Crea y personaliza tu perfil Web3, echa un vistazo a otros perfiles y <br> explora colecciones y tokens populares de NFT.
-              </p>
-              <button class="button btn-main">Más información <i class="bi bi-arrow-right"></i></button>
+                <h4 class="title">Explora perfiles Web3 y solicita uno gratis</h4>
+                <p class="subtitle">Crea y personaliza tu perfil Web3, echa un vistazo a otros perfiles y explora colecciones y tokens populares de NFT.</p>
+                <button class="button btn-main">Más información <i class="bi bi-arrow-right"></i></button>
             </div>
-        </section>
-        <div class="division"></div>
-        <section class="graphic">
+        </div>
+        <div class="graphic">
             <table class="table border-top table-hover">
                 <thead>
                     <tr class="header">
@@ -76,7 +73,6 @@
                         <th>Precio</th>
                         <th>Cambio</th>
                         <th>Operar</th>
-
                     </tr>
                 </thead>
                 <tbody class="body">
@@ -110,50 +106,73 @@
                     </tr>
                 </tbody>
             </table>
-        </section>
-        <section class="dates">
+        </div>
+        <div class="dates">
             <div class="left">
                 <h5>Gane hasta 28 US$ en criptomoneda</h5>
-                <p>Descubra cómo funcionan las distintas <br> criptomonedas y obtenga un poco de cada una para <br> probarlas.</p>
+                <p>Descubra cómo funcionan las distintas criptomonedas y obtenga un poco de cada una para probarlas.</p>
                 <button class="btn btn-main">Comience a ganar</button>
             </div>
             <div class="right">
                 <ul>
                     <li>
-                        <a href="Coinbase.html"><img src="https://cryptologos.cc/logos/the-graph-grt-logo.png" alt="Graph-icon" class="icon"> The Graph <span class="letters">GRT</span><span class="button number1">Gane 4 US$ GRT</span></a>
+                        <a href="#">
+                            <img src="https://cryptologos.cc/logos/the-graph-grt-logo.png" alt="Graph-icon" class="icon"> The Graph <span class="letters">GRT</span><span class="button">Gane 4 US$ GRT</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="Coinbase.html"><img src="https://cryptologos.cc/logos/amp-amp-logo.png" alt="Amp-icon" class="icon"> Amp <span class="letters"> AMP</span><span class="button number2"> Gane 3 US$ AMP</span></a>
+                        <a href="#">
+                            <img src="https://cryptologos.cc/logos/amp-amp-logo.png" alt="Amp-icon" class="icon"> Amp <span class="letters"> AMP</span><span class="button"> Gane 3 US$ AMP</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="Coinbase.html"><img src="https://www.svgrepo.com/show/217771/shopping-logo.svg" alt="SHPING-icon" class="icon"> SHPING <span class="letters">SHPING</span> <span class="button number3">Gane 15 US$ SHPING</span></a>
+                        <a href="#">
+                            <img src="https://www.svgrepo.com/show/217771/shopping-logo.svg" alt="SHPING-icon" class="icon"> SHPING <span class="letters">SHPING</span> <span class="button">Gane 15 US$ SHPING</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="Coinbase.html"><img src="https://seeklogo.com/images/N/near-icon-logo-10785AE366-seeklogo.com.png" alt="Near-Protocol-Icon" class="icon"> Near Protocol <span class="letters">NEAR</span> <span class="button number4">Gane 3 US$ NEAR</span></a>
+                        <a href="#">
+                            <img src="https://seeklogo.com/images/N/near-icon-logo-10785AE366-seeklogo.com.png" alt="Near-Protocol-Icon" class="icon"> Near Protocol <span class="letters">NEAR</span> <span class="button">Gane 3 US$ NEAR</span>
+                        </a>
                     </li>
-                    <a class="ver" href="Coinbase.html">Ver más ></a>
+                    <a class="ver" href="#">Ver más ></a>
                 </ul>
             </div>
-        </section>
-        <section class="sec-features">
+        </div>
+        <div class="sec-features">
             <div class="inicio">
-                <h3 class="subtitle">Crea hoy tu cartera de  criptomonedas</h3>
-                <p class="para">En Coinbase encontrarás una gran variedad de funciones. ¡Somos el mejor lugar para comenzar a operar!</p>
+                <h3 class="title">Crea hoy tu cartera de  criptomonedas</h3>
+                <p class="subtitle">En Coinbase encontrarás una gran variedad de funciones. ¡Somos el mejor lugar para comenzar a operar!</p>
                 <img class="img-2" src="https://assets.coinbase.com/assets/2a688cc86b2508f2.webp" alt="Imágen"> 
                 <div class="items">
                     <ul>
-                        <li><i class="icon bi bi-bar-chart-fill"></i><h4>Gestiona tu carrera</h4><p>Compra y vende las monedas digitales más populares seguimiento desde el mismo lugar.</p></li>
-                        <li><i class="icon bi bi-calendar-check"></i><h4>Compras periódicas</h4><p>Invierte poco a poco en criptomonedas programando compras diarias, semanales y mensuales.</p></li>
-                        <li><i class="icon bi bi-lock"></i><h4>Protección de la caja fuerte</h4><p>Para una mayor seguridad, guarde sus fondos en una caja fuerte con retiradas retrasadas en el tiempo.</p></li>
-                        <li><i class="bi bi-file-check"></i><h4>Aplicaciones móviles</h4><p>Mantente al día de los mercados con la aplicación de Coinbase para <a href="#">Android</a> o <a href="#">IOS</a>.</p></li>
+                        <li>
+                            <i class="icon bi bi-bar-chart-fill"></i>
+                            <h4>Gestiona tu carrera</h4>
+                            <p>Compra y vende las monedas digitales más populares seguimiento desde el mismo lugar.</p>
+                        </li>
+                        <li>
+                            <i class="icon bi bi-calendar-check"></i>
+                            <h4>Compras periódicas</h4>
+                            <p>Invierte poco a poco en criptomonedas programando compras diarias, semanales y mensuales.</p>
+                        </li>
+                        <li>
+                            <i class="icon bi bi-lock"></i>
+                            <h4>Protección de la caja fuerte</h4>
+                            <p>Para una mayor seguridad, guarde sus fondos en una caja fuerte con retiradas retrasadas en el tiempo.</p>
+                        </li>
+                        <li><i class="bi bi-file-check"></i>
+                            <h4>Aplicaciones móviles</h4>
+                            <p>Mantente al día de los mercados con la aplicación de Coinbase para <a href="#">Android</a> o <a href="#">IOS</a>.</p>
+                        </li>
                     </ul>
                 </div>
             </div>
-        </section>
-        <section class="sec-benefits">
+        </div>
+        <div class="sec-benefits">
             <div class="inicio">
-                <h3 class="subtitle">La plataforma de criptomonedas más fiable</h3>
-                <p class="para">Aquí le damos un par de razones por las que escoger Coinbase</p>
+                <h3 class="title">La plataforma de criptomonedas más fiable</h3>
+                <p class="subtitle">Aquí le damos un par de razones por las que escoger Coinbase</p>
             </div>
             <div class="cards">
                 <div class="feauture col-md">
@@ -162,10 +181,10 @@
                     </div>
                     <div class="description">
                         <h4 class="title">Almacenamiento Seguro</h4>
-                        <p class="text">La gran mayoría de activos digitales<br> se guardan en un almacenamiento<br> seguro fuera de línea.</p>
+                        <p class="text">La gran mayoría de activos digitales se guardan en un almacenamiento seguro fuera de línea.</p>
                     </div>
                     <div class="cta">
-                      <a href="#">Aprenda cómo Coinbase mantiene sus fondos seguros y protegidos </a><i class="bi bi-caret-right"></i>
+                        <a href="#">Aprenda cómo Coinbase mantiene sus fondos seguros y protegidos </a><i class="bi bi-caret-right"></i>
                     </div>
                 </div>
                 <div class="feauture col-md">
@@ -174,27 +193,28 @@
                     </div>
                     <div class="description">
                         <h4 class="title">Protected Assets</h4>
-                        <p class="text">Our risk management measures are designed to protect your assets.</p>
+                        <p class="text">
+                            Nuestras medidas de gestión de riesgos están diseñadas para proteger sus activos.</p>
                     </div>
                     <div class="cta">
-                        <a href="#">Aprende sobre cómo tu puede estar <br> protegido </a><i class="bi bi-caret-right"></i>
+                        <a href="#">Aprende sobre cómo tu puede estar protegido </a><i class="bi bi-caret-right"></i>
                     </div>
                 </div>
                 <div class="feauture col-md">
                     <div class="icon">
                         <i class="bi bi-shield-shaded"></i>
-                     </div>
+                    </div>
                     <div class="description">
-                        <h4 class="title">Buenas prácticas de la <br> industria</h4>
-                        <p class="text">Coinbase admite una gran variedad <br> de las monedas digitales más <br> populares.</p>
+                        <h4 class="title">Buenas prácticas de la industria</h4>
+                        <p class="text">Coinbase admite una gran variedad de las monedas digitales más populares.</p>
                     </div>
                     <div class="cta">
-                        <a href="#">Aprenda cómo implementamos las <br>mejores prácticas del sector para la seguridad de la cuenta </a><i class="bi bi-caret-right"></i>
+                        <a href="#">Aprenda cómo implementamos las mejores prácticas del sector para la seguridad de la cuenta </a><i class="bi bi-caret-right"></i>
                     </div>
                 </div>
             </div> 
-        </section>
-        <section class="kpis row">
+        </div>
+        <div class="kpis row">
             <div class="kpi col-md">
                 <span class="number">145 mil MUS$</span>
                 <span class="desc">Volumen trimestral negociado</span>
@@ -207,11 +227,11 @@
                 <span class="number">110 M+</span>
                 <span class="desc">Usuarios verificados</span>
             </div>
-        </section>
-        <section class="sec-onboarding">
+        </div>
+        <div class="sec-onboarding">
             <div class="inicio">
-                <h3 class="subtitle">Comience en tan solo un minuto</h3>
-                <p class="para">Coinbase admite una gran variedad de las monedas digitales más populares.</p>
+                <h3 class="title">Comience en tan solo un minuto</h3>
+                <p class="subtitle">Coinbase admite una gran variedad de las monedas digitales más populares.</p>
             </div>
             <div class="cards">
                 <div class="feauture col-md">
@@ -240,19 +260,20 @@
                         <h4 class="title">Comience a comprar y vender</h4>
                     </div>
                 </div>
-                    <div class="cta">
-        </section>
-        <section class="sec-footer">
+                </div>
+        </div>
+        <div class="last-section">
             <div class="left">
                 <h5>Gane hasta 28 US$ en criptomoneda</h5>
-                <p>Descubra cómo funcionan las distintas <br> criptomonedas y obtenga un poco de cada una para <br> probarlas.</p>
+                <p>Descubra cómo funcionan las distintas criptomonedas y obtenga un poco de cada una para probarlas.</p>
                 <button class="btn btn-main">Comience a ganar</button>
             </div>
             <img src="https://assets.coinbase.com/assets/245d5698473dc72a.webp" alt="Imágen">
-        </section>
+        </div>
         <div class="text">
             <p>*Al comprar USDC, se te inscribirá automáticamente para recibir recompensas. Si prefieres no participar u obtener más información sobre las recompensas, puedes hacer <a href="#">clic aquí</a>. Las tasas de recompensas están sujetas a cambios y pueden variar según la región. Los clientes podrán ver las últimas tasas aplicables directamente en sus cuentas.</p>
         </div>
+    </main>
         <footer class="footer">
             <div class="part">
                 <div class="icon">

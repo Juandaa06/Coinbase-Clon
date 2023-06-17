@@ -11,7 +11,6 @@
     align-items: center;
   }
 
-
   /*Diseños de los botones principales y secundarios*/
   
   .btn-main{
@@ -282,10 +281,6 @@
     width: 30px;
   }
 
-  .graphic .body {
-    font-size: 1.1rem;
-  }
-
   .graphic .body th {
     color: rgb(91, 97, 110);
     font-weight: 300;
@@ -294,7 +289,8 @@
   .graphic .body td {
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 1.7rem;
+    padding-top: 0.85rem;
+    padding-bottom: 0.85rem;
     justify-content: center;
     align-items: center;
   }
@@ -345,7 +341,7 @@
     padding-right: 2rem;
   }
 
-  .dates button {
+  .dates button{
     background-color: rgb(0, 82, 255);
     color: white;
     font-size: 0.92rem;
@@ -665,13 +661,13 @@
   
   /*Texto debajo de la última sección*/
 
-  .text {
+  .down-text {
     font-size: 0.89rem;
     padding-left: 2rem;
     padding-right: 2rem;
     opacity: 0.7;
   }
-  .text a {
+  .down-text a {
     color: rgb(0, 60, 255);
   }
   
@@ -688,12 +684,15 @@
     flex-direction: column;
     padding-left: 2rem;
   }
+
   .footer .part .icon img {
     width: 60%;
   }
+
   .footer .part .languages {
     padding-top: 1rem;
   }
+
   .footer .part .languages .select {
     text-align: left;
     padding: 0.3rem 1.1rem;
@@ -702,21 +701,26 @@
     border-color: rgba(221, 221, 221, 0.8235294118);
     font-size: 1.05rem;
   }
+  
   .footer .part .languages .select:hover {
     border: 1px solid rgb(0, 65, 255);
   }
+
   .footer .part .languages .select option {
     font-size: 1.2rem;
   }
+
   .footer .part p {
     padding-top: 1rem;
     font-size: 1.1rem;
     opacity: 0.7;
   }
+
   .footer .part .redes .media-social {
     display: flex;
     flex-direction: row;
   }
+
   .footer .part .redes .media-social a {
     color: black;
     text-decoration: none;
@@ -724,22 +728,26 @@
     font-size: 1.1rem;
     padding-right: 1rem;
   }
+
   .footer .part .redes .media-social a:hover {
     color: rgb(0, 82, 255);
     text-decoration: underline;
   }
+
   .footer .information {
     width: 77%;
     padding-top: 1rem;
     padding-left: 8rem;
     padding-right: 2rem;
   }
+
   .footer .information h6 {
     font-size: 1.03rem;
     color: black;
     text-align: left;
     padding-top: 25px;
   }
+
   .footer .information ul {
     font-size: 1.03rem;
     list-style: none;
@@ -749,9 +757,11 @@
     opacity: 0.6;
     font-weight: 400;
   }
+
   .footer .information ul li {
     padding: 1px 0;
   }
+
   .footer .information ul a {
     color: black;
     text-decoration: none;
@@ -759,12 +769,20 @@
 
   /*Media Queries*/
 
-  @media (max-width: 320px){
+  @media (max-width: 500px){
         
     /*Header*/
-
+      
       .nav{
-        justify-content: center;
+        display: flex;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        margin-right: auto;
       }
       
       .main-menu{
@@ -772,14 +790,12 @@
       }
 
       .logo img{
-        position: relative;
-        left: 4rem;
-        width: 50%;
+        width: 5rem;
       }
 
-      .started{
-        padding-bottom: 0.5rem;
-        padding-right: 2.5rem;
+      .started {
+        display: flex;
+        align-items: center;
       }
 
     /*Primera sección*/
@@ -791,8 +807,27 @@
       width: 100%;
       justify-content: center;
       align-items: center;
-      padding-left: 5.5rem;
-      padding-right: 1rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-bottom: 2.5rem;
+    }
+    
+    .sec-home .home-cta{
+      flex: 0;
+      padding-top: 1rem;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .sec-home .home-img img{
+      width: 100%;
+      height: 300px;
+      min-width: 0px;
+    }
+
+    .sec-home .home-cta .home-text{
+      font-size: 14px;
+      word-spacing: 0px;
     }
 
     .sec-home .home-cta .home-title{
@@ -801,43 +836,1327 @@
       justify-content: center;
       align-items: center;
     }
-    
-    .sec-home .home-cta{
-      flex: 0;
-      padding-left: 4rem;
-      padding-right: 1rem;
-    }
-
-    .sec-home .home-img img{
-      width: 100%;
-      height: 300px;
-    }
-
-    .sec-home .home-cta .home-text{
-      font-size: 14px;
-    }
 
     .sec-home .login .input{
-      width: 200px
+      width: 180px;
+      height: 30px;
+      font-size: 12px;
     }
 
-      .sec-benefits, .sec-information, .sec-features, .graphic, .dates, .kpis.row, .sec-onboarding, .last-section, .text, .footer{
-        display: none;
+    .sec-home .login .btn-main{
+      padding: 0;
+    }
+
+    /*Segunda sección*/
+
+    .sec-information .imagen{
+      width: 30%;
+      height: 50%;
+    }
+
+    .sec-information .information{
+      width: 100%;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .sec-information .information .title{
+      font-size: 0.85rem;
+      word-spacing: -1px;
+    }
+
+    .sec-information .information .subtitle{
+      font-size: 0.7rem; 
+      padding-right: 0rem;
+    }
+
+    .sec-information .button{
+      padding-left: 10px;
+      padding-right: 0;
+      font-size: 0.6rem;
+      width: 120px;
+      height: 20px;
+      justify-content: start;
+    }
+
+    .sec-information .button .bi-arrow-right{
+      font-size: 0.8rem;
+      padding-left: 0.2rem;
+    }
+
+    /*Tercera sección*/
+
+    .graphic .header{
+      font-size: 0.6rem;
+    }
+
+    .graphic .body td{
+      text-align: center;
+      align-items: center;
+      padding: 0.6rem 0 0.36rem 0;
+    }
+
+    .graphic .body tr{
+      font-size: 0.6rem;
+    }
+
+    .graphic .bitcoin{
+      padding: 0.15rem 0.28rem;
+    }
+
+    .graphic .body .name{
+      display: flex;
+      flex-direction: column;
+      font-size: 0.7rem;
+      text-align: center;
+      align-items: center;
+    }
+
+    .graphic .body span{
+      padding-left: 0;
+      font-size: 0.5rem;
+    }
+
+    .graphic .body .value{
+      padding: 1rem 0.2rem 0 0.2rem;
+    }
+
+    .graphic .etherueum{
+      width: 22px;
+    }
+
+    .graphic .cardano{
+      width: 24px;
+      padding: 0;
+    }
+
+    .graphic .solana{
+      width: 26px
+    }
+
+    .graphic .body .cambio, .graphic .body .negative{
+      padding-top: 1rem;
+    }
+
+    .graphic .body .btn{
+      font-size: 8px;
+      padding: 6px 12px;
+      margin-top: 5px;
+    }
+
+    /*Cuarta sección*/
+
+    .dates{
+      padding-top: 1rem;
+    }
+
+    .dates h5{
+      line-height: 25px;
+      font-size: 1.3rem;
+    }
+
+    .dates p{
+      font-size: 0.8rem;
+      padding-right: 0;
+    }
+
+    .dates button{
+      font-size: 0.8rem;
+      padding: 0.3rem 0.4rem;
+    }
+
+    .dates .icon{
+      width: 40px;
+    }
+
+    .dates .left{
+      width: 60%;
+      padding-left: 1rem;
+    }
+
+    .dates .right{
+      padding-right: 1rem;
+      padding-top: 0;
+    }
+
+    .dates .right li a{
+      padding: 0.8rem 0rem;
+      font-size: 1rem;
+    }
+
+    .dates .right li a:hover{
+      padding: 0.8rem 0rem;
+    }
+
+    .dates .right li .letters{
+      display: none;
+    }
+
+    .dates .right li .button{
+      font-size: 0.8rem;
+      display: none;
+    }
+    
+    /*Quinta sección*/
+
+    .sec-features .inicio{
+      padding-bottom: 3rem;
+    }
+
+    .sec-features .title{
+      font-size: 30px;
+      text-align: center;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .sec-features .subtitle{
+      font-size: 15px;
+      text-align: center;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .sec-features .img-2{
+        width: 80%;
+    }
+
+    .sec-features .items{
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+
+    .sec-features .items ul{
+      padding-left: 0;
+    }
+
+    .sec-features .items ul li{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .sec-features .items h4, .sec-features .items p{
+      padding-left: 0px;
+    }
+
+    .sec-features .items h4{
+      padding-top: 1.3rem;
+    }
+
+    .sec-features .items p{
+      text-align: center;
+    }
+
+    /*Sexta sección*/
+
+    .sec-benefits .inicio .title {
+      font-size: 24px;
+      padding-top: 3.5rem;
+      line-height: normal;
+    }
+
+    .sec-benefits .subtitle {
+      font-size: 16px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    
+    .sec-benefits .cards{
+      flex-direction: column;
+      padding-top: 2rem;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    .cards .icon{
+      font-size: 2.8rem;
+    }
+
+    .cards .description .title{
+      font-size: 1.1rem;
+    }
+
+    .cards .cta{
+      margin-top: 0;
+      padding-bottom: 3rem;
+    }
+
+    /*Septima sección*/
+
+    .kpis{
+      margin: 0;
+      padding: 0;
+      width: 100%
+    }
+
+    .kpis .number{
+      padding-top: 10px;
+      font-size: 20px;
+      line-height: normal;
+    }
+
+    /*Octava sección*/
+
+    .sec-onboarding{
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+
+    .sec-onboarding .title{
+      font-size: 27px;
+    }
+
+    .sec-onboarding .subtitle{
+      font-size: 15px;
+    }
+
+    .sec-onboarding i{
+      font-size: 2.5rem;
+      padding-bottom: 0.9rem;
+    }
+
+    .sec-onboarding .cards .description .title{
+      font-size: 0.95rem;
+      line-height: normal;
+      font-weight: normal;
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .sec-onboarding .feauture{
+      width: calc(100%/3);
+    }
+
+    .sec-onboarding .cards{
+      padding: 0rem;
+    }
+
+    /*Última sección*/
+    
+    .last-section{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+
+    .last-section .left{
+      padding-left: 1rem;
+      width: 100%;
+    }
+
+    .last-section img{
+      display: none;
+    }
+
+    .last-section .left h5{
+      font-size: 1.5rem;
+    }
+
+    .last-section .left p{
+      font-size: 0.8rem;
+      padding-right: 2rem;  
+    }
+
+    .last-section .left button{
+      font-size: 0.7rem;
+      padding: 0.5rem 0.5rem;
+    }
+
+    .down-text{
+      padding: 0.7rem;
+      font-size: 0.67rem;
+    }
+
+    /*footer*/
+
+    .footer{
+      flex-direction: column;
+      width: 100%;
+      padding-left: 0.5rem;
+      padding-top: 2rem;
+    }
+
+    .footer .part{
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .footer .part .languages{
+      padding-top: 0;
+    }
+
+    .footer .part .languages .select{
+      padding: 0;
+      font-size: 0.75rem;
+    }
+
+    .footer .part .icon img{
+      width: 30%
+    }
+
+    .footer .part p{
+      padding-top: 0.5rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.68rem;
+    }
+
+    .footer .part .redes .media-social a{
+      font-size: 0.68rem;
+    }
+
+    .footer .information{
+      width: 100%;
+      padding-left: 0.5rem;
+      padding-right: 0.8rem;
+    }
+
+    .footer .information .container{
+      padding: 0;
+    }
+
+    .footer .information h6{
+      font-size: 0.70rem;
+      padding-top: 10px;
+    }
+
+    .footer .information ul{
+      font-size: 0.7rem;
+    }
+  }
+  
+  @media (min-width: 501px) and (max-width: 800px){
+    /*Header*/
+      
+    .nav{
+      display: flex;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    
+    .main-menu{
+      display: none;
+    }
+
+    .logo img{
+      width: 5rem;
+    }
+
+    .started {
+      display: flex;
+      align-items: center;
+    }
+
+  /*Primera sección*/
+  
+  .sec-home{
+    padding-top: 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    padding-bottom: 2.5rem;
+  }
+  
+  .sec-home .home-cta{
+    flex: 0;
+    padding-top: 1rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .sec-home .home-cta .cta-text{
+    font-size: 0.8rem;
+  }
+
+  .sec-home .home-img img{
+    width: 100%;
+    height: 300px;
+    min-width: 0px;
+  }
+
+  .sec-home .home-cta .home-text{
+    padding-top: 10px;
+    font-size: 13px;
+    word-spacing: 0px;
+  }
+
+  .sec-home .home-cta .home-title{
+    display: flex;
+    font-size: 2.2rem;
+    width: 100%;
+    line-height: 1.1;
+  }
+
+  .sec-home .login .input{
+    width: 180px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .sec-home .login .btn-main{
+    padding: 0;
+    font-weight: 600;
+    font-size: 11.5px;
+  }
+
+  /*Segunda sección*/
+
+  .sec-information{
+    align-items: center;
+  }
+
+  .sec-information .imagen{
+    width: 20%;
+    height: 50%;
+    padding-top: 1rem;
+  }
+
+  .sec-information .information{
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sec-information .information .title{
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    word-spacing: -1px;
+  }
+
+  .sec-information .information .subtitle{
+    font-size: 0.87rem; 
+    padding-right: 0rem;
+  }
+
+  .sec-information .button{
+    padding-left: 10px;
+    padding-right: 0;
+    font-size: 0.7rem;
+    width: 120px;
+    height: 30px;
+    justify-content: start;
+  }
+
+  .sec-information .button .bi-arrow-right{
+    font-size: 0.8rem;
+    padding-left: 0.2rem;
+    padding-top: 0;
+  }
+
+  /*Tercera sección*/
+
+  .graphic .header{
+    font-size: 0.8rem;
+  }
+
+  .graphic .body td{
+    align-items: center;
+    padding: 0.6rem 0 0.6rem 0;
+  }
+
+  .graphic .body tr{
+    font-size: 0.95rem;
+  }
+
+  .graphic .body span{
+    padding-left: 0;
+    font-size: 0.7rem;
+  }
+
+  .graphic .etherueum{
+    width: 22px;
+  }
+
+  .graphic .cardano{
+    width: 24px;
+    padding: 0;
+  }
+
+  .graphic .solana{
+    width: 26px
+  }
+
+  .graphic .body .btn{
+    font-size: 9px;
+    padding: 6px 12px;
+  }
+
+  /*Cuarta sección*/
+
+  .dates{
+    padding-top: 1rem;
+  }
+
+  .dates h5{
+    line-height: 30px;
+    font-size: 1.6rem;
+    padding-bottom: 5px;
+  }
+
+  .dates p{
+    word-spacing: -1px;
+    padding-right: 0;
+  }
+
+  .dates button{
+    font-size: 0.95rem;
+    padding: 0.3rem 0.4rem;
+  }
+
+  .dates .icon{
+    width: 40px;
+  }
+
+  .dates .left{
+    padding-left: 1rem;
+  }
+
+  .dates .right{
+    padding-right: 1rem;
+    padding-top: 0;
+  }
+
+  .dates .right ul{
+    padding-left: 0.8rem;
+    margin-bottom: 0;
+  }
+
+  .dates .right li a{
+    padding: 0.8rem 0rem;
+    font-size: 1.2rem;
+  }
+
+  .dates .right li a:hover{
+    padding: 0.8rem 0rem;
+  }
+
+  .dates .right li .button{
+    padding-right: 0;
+    font-size: 0.9rem;
+  }
+
+  .dates .right li .letters{
+    display: none;
+  }
+  
+  /*Quinta sección*/
+
+  .sec-features .inicio{
+    padding-bottom: 3rem;
+  }
+
+  .sec-features .title{
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .sec-features .subtitle{
+    text-align: center;
+    padding: 0 1rem;
+  }
+
+  .sec-features .img-2{
+      width: 90%;
+  }
+
+  .sec-features .items ul{
+    padding-right: 2rem;
+  }
+
+  .sec-features .items h4{
+    padding-top: 1.3rem;
+    padding-left: 29px;
+  }
+
+  /*Sexta sección*/
+
+  .sec-benefits .inicio .title {
+    font-size: 28px;
+    padding-top: 3.5rem;
+    line-height: normal;
+    color: black;
+  }
+
+  .sec-benefits .subtitle {
+    font-size: 16px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  .sec-benefits .cards{
+    padding-top: 2rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .sec-benefits .cards .feauture{
+    width: calc(100%/3);
+  }
+
+  .cards .icon{
+    font-size: 2.8rem;
+  }
+
+  .cards .description .title{
+    font-size: 1rem;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .description .text{
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 0rem 1rem;
+  }
+
+  .cards .cta a{
+    font-size: 0.8rem;
+    word-spacing: -1px;
+  }
+
+  .cards .cta{
+    margin-top: 0;
+    padding-bottom: 3rem;
+  }
+
+  /*Septima sección*/
+
+  .kpis{
+    padding: 24px 10px;
+    width: 100%;
+  }
+
+  .kpis .kpi{
+    width: calc(100%/3);
+    padding: 0 0;
+  }
+
+  .kpis .desc{
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .kpis .number{
+    padding-top: 10px;
+    font-size: 25px;
+    line-height: normal;
+  }
+
+  /*Octava sección*/
+
+  .sec-onboarding{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+
+  .sec-onboarding .title{
+    font-size: 30px;
+  }
+
+  .sec-onboarding i{
+    font-size: 3rem;
+    padding-bottom: 0.9rem;
+  }
+
+  .sec-onboarding .cards .description .title{
+    line-height: normal;
+  }
+
+  .sec-onboarding .feauture{
+    width: calc(90%/3);
+  }
+
+  .sec-onboarding .cards{
+    padding: 1rem;
+  }
+
+  /*Última sección*/
+  
+
+  .last-section .left{
+    padding: 1rem 0rem 1rem 1rem;
+    width: 100%;
+  }
+
+  .last-section .left h5{
+    font-size: 1.5rem;
+  }
+
+  .last-section .left p{
+    font-size: 0.8rem;
+    padding-right: 2rem;  
+  }
+
+  .last-section .left button{
+    font-size: 0.7rem;
+    padding: 0.5rem 0.5rem;
+  }
+
+  .down-text{
+    padding: 0.7rem;
+    font-size: 0.67rem;
+  }
+
+  /*footer*/
+
+  .footer{
+    width: 100%;
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+    padding-right: 0.5rem;
+  }
+
+  .footer .part{
+    width: 40%;
+    padding-left: 0;
+  }
+
+  .footer .part .languages{
+    padding-top: 0;
+  }
+
+  .footer .part .languages .select{
+    padding: 0;
+    font-size: 0.68rem;
+  }
+
+  .footer .part p{
+    padding-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.68rem;
+  }
+
+  .footer .part .redes .media-social a{
+    font-size: 0.68rem;
+  }
+
+  .footer .information{
+    width: 100%;
+    padding-top: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .footer .information .container{
+    padding: 0;
+  }
+
+  .footer .information h6{
+    font-size: 0.70rem;
+    padding-top: 10px;
+  }
+
+  .footer .information ul{
+    font-size: 0.7rem;
+  }
+  }
+
+  @media (min-width: 801px) and (max-width: 975px){
+
+        /*Header*/
+      
+        .nav{
+          display: flex;
+          padding: 0.5rem;
+        }
+    
+        .logo {
+          display: flex;
+          align-items: center;
+          margin-right: auto;
+        }
+        
+        .logo img{
+          width: 5rem;
+        }
+
+        .nav ul li{
+          padding-right: 0.4rem;
+        }
+
+        .main-menu li{
+          font-size: 0.7rem;
+        }
+
+        .started {
+          display: flex;
+          align-items: center;
+        }
+        
+        .started .btn-main{
+          padding: 0.3rem 0.2rem;
+        }
+      /*Primera sección*/
+      
+      .sec-home{
+        padding-top: 4rem;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-left: 2rem;
+        padding-bottom: 2.5rem;
       }
+    
+      .sec-home .home-img img{
+        height: 500px;
+      }
+      
+      .sec-home .home-cta .home-text{
+        padding-top: 10px;
+        font-size: 15px;
+        width: 400px;
+        word-spacing: 0px;
+      }
+    
+      .sec-home .home-cta .home-title{
+        display: flex;
+        font-size: 2.7rem;
+        width: 100%;
+        line-height: 1.1;
+      }
+    
+      .sec-home .login .input{
+        width: 230px;
+        height: 50px;
+        font-size: 15px;
+      }
+    
+      .sec-home .login .btn-main{
+        padding: 0;
+        font-weight: 600;
+      }
+    
+      /*Segunda sección*/
+    
+      .sec-information{
+        align-items: center;
+      }
+    
+      .sec-information .imagen{
+        width: 20%;
+        height: 50%;
+        padding-top: 1rem;
+        padding-left: 1rem;
+      }
+    
+      .sec-information .information .title{
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+        word-spacing: -1px;
+      }
+    
+      .sec-information .information .subtitle{
+        font-size: 1rem; 
+      }
+    
+      .sec-information .button{
+        padding-left: 10px;
+        font-size: 1rem;
+        justify-content: start;
+      }
+    
+      .sec-information .button .bi-arrow-right{
+        font-size: 1rem;
+        padding-left: 0.2rem;
+        padding-top: 0;
+      }
+    
+      /*Tercera sección*/
+      
+      .graphic{
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    
+      .graphic .body span{
+        font-size: 0.9rem;
+      }
+    
+      .graphic .etherueum{
+        width: 24px;
+      }
+    
+      .graphic .cardano{
+        width: 26px;
+        padding: 0;
+      }
+    
+      .graphic .solana{
+        width: 28px
+      }
+    
+      .graphic .body .btn{
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    
+      /*Cuarta sección*/
+    
+      .dates{
+        padding-top: 1rem;
+      }
+    
+      .dates h5{
+        font-size: 2rem;
+        padding-bottom: 5px;
+      }
+    
+      .dates p{
+        font-size: 0.9rem;
+      }
+    
+      .dates .icon{
+        width: 40px;
+      }
+    
+      .dates .right{
+        padding-right: 1rem;
+        padding-top: 1rem;
+      }
+      
+      /*Quinta sección*/
+    
+      .sec-features .img-2{
+          width: 70%;
+      }
+    
+      .sec-features .items h4{
+          padding-left: 29px;
+      }
+    
+      /*Sexta sección*/
+    
+      .sec-benefits .inicio .title {
+        padding-top: 3.5rem;
+        color: black;
+      }
+      
+      .sec-benefits .cards{
+        padding-top: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    
+      .sec-benefits .cards .feauture{
+        width: calc(100%/3);
+      }
+    
+      .cards .icon{
+        font-size: 3rem;
+      }
+    
+      .cards .description .title{
+        font-size: 1.2rem;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .cards .description .text{
+        font-size: 0.95rem;
+        display: flex;
+        justify-content: center;
+        height: 80px;
+        padding: 0rem 1rem;
+      }
+    
+      .cards .cta a{
+        font-size: 0.9rem;
+      }
+    
+      .cards .cta{
+        margin-top: 1.5rem;
+        padding-bottom: 5rem;
+      }
+    
+      /*Septima sección*/
+    
+      .kpis .kpi{
+        width: calc(100%/3);
+        padding: 0 0;
+      }
+    
+      .kpis .number{
+        font-size: 35px;
+        line-height: normal;
+      }
+    
+      /*Octava sección*/
+    
+      .sec-onboarding{
+        padding-bottom: 4rem;
+      }
+    
+      .sec-onboarding .title{
+        font-size: 35px;
+      }
+    
+      .sec-onboarding i{
+        padding-bottom: 2rem;
+      }
+    
+      .sec-onboarding .cards .description .title{
+        line-height: normal;
+      }
+    
+      .sec-onboarding .cards{
+        padding: 3rem;
+      }
+    
+      /*Última sección*/
+    
+      .last-section .left{
+        padding: 2rem;
+        width: 40%;
+      }
+    
+      .last-section .left button{
+        padding: 0.5rem 0.5rem;
+      }
+    
+      .down-text{
+        padding: 1rem 2rem;
+        font-size: 0.8rem;
+      }
+    
+      /*footer*/
+    
+      .footer{
+        width: 100%;
+        padding-left: 0.5rem;
+        padding-top: 2rem;
+        padding-right: 0.5rem;
+      }
+    
+      .footer .part{
+        width: 40%;
+        padding-left: 0;
+      }
+    
+      .footer .part .languages{
+        padding-top: 0;
+      }
+    
+      .footer .part .languages .select{
+        padding: 0;
+        font-size: 0.68rem;
+      }
+    
+      .footer .part p{
+        padding-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-size: 0.68rem;
+      }
+    
+      .footer .part .redes .media-social a{
+        font-size: 0.68rem;
+      }
+    
+      .footer .information{
+        width: 100%;
+        padding-top: 0;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+    
+      .footer .information .container{
+        padding: 0;
+      }
+    
+      .footer .information h6{
+        font-size: 0.90rem;
+        padding-top: 10px;
+      }
+    
+      .footer .information ul{
+        font-size: 0.85rem;
+      }
+      }
+
+  @media (min-width: 976px) and (max-width: 1200px){
+    /*Header*/
+      
+    .nav{
+      display: flex;
+      padding: 0.5rem;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+    
+    .logo img{
+      width: 5rem;
+    }
+
+    .main-menu li{
+      font-size: 0.85rem;
+    }
+
+    .started {
+      display: flex;
+      align-items: center;
+    }
+    
+  /*Primera sección*/
+  
+  .sec-home{
+    padding-top: 7rem;
+    width: 100%;
+    padding-bottom: 2.5rem;
+    padding-right: 2rem;
   }
 
-  @media (min-width: 321px) and (max-width: 677px){
-
+  .sec-home .home-img img{
+    height: 450px;
+  }
+  
+  .sec-home .home-cta .home-text{
+    font-size: 18px;
+    width: 600px;
+    word-spacing: 0px;
   }
 
-  @media (min-width: 678px) and (max-width: 768px){
-
+  .sec-home .home-cta .home-title{
+    font-size: 3.2rem;
   }
 
-  @media (min-width: 769px) and (max-width: 840px){
-
+  .sec-home .login .btn-main{
+    padding: 0;
   }
 
-  @media (min-width: 841px) and (max-width: 1024px){
+  /*Segunda sección*/
 
+  .sec-information{
+    align-items: center;
   }
+
+  .sec-information .imagen{
+    width: 20%;
+    height: 50%;
+    padding-top: 1rem;
+    padding-left: 4rem;
+  }
+
+  .sec-information .information .title{
+    font-size: 2rem;
+    word-spacing: -1px;
+  }
+
+  .sec-information .information .subtitle{
+    font-size: 1.2rem; 
+  }
+
+  /*Tercera sección*/
+  
+  .graphic{
+    padding-left: 10px;
+  }
+
+  .graphic .body .btn{
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  /*Cuarta sección*/
+
+  .dates{
+    padding: 1rem;
+  }
+
+  .dates h5{
+    font-size: 2rem;
+    padding-bottom: 5px;
+  }
+
+  .dates p{
+    font-size: 1rem;
+  }
+  
+  /*Quinta sección*/
+
+  .sec-features .items h4{
+      padding-left: 29px;
+  }
+
+  /*Sexta sección*/
+  
+  .sec-benefits .cards{
+    padding-top: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sec-benefits .cards .feauture{
+    width: calc(100%/3);
+  }
+
+  .cards .icon{
+    font-size: 3rem;
+  }
+
+  .cards .description .title{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cards .description .text{
+    height: 80px;
+    padding: 0rem 1rem;
+  }
+
+
+  .cards .cta{
+    margin-top: 1rem;
+    padding-bottom: 5rem;
+  }
+
+  /*Octava sección*/
+
+  .sec-onboarding{
+    padding-bottom: 4rem;
+  }
+
+  .sec-onboarding i{
+    padding-bottom: 2rem;
+  }
+
+  .sec-onboarding .cards .description .title{
+    line-height: normal;
+  }
+
+  /*Última sección*/
+
+  .down-text{
+    padding: 1rem 4rem;
+    font-size: 0.9rem;
+  }
+
+  /*footer*/
+
+  .footer{
+    padding-top: 2rem;
+  }
+  }
+  
+
